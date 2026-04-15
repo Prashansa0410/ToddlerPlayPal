@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const VOCAL_BRIDGE_TOKEN_URL = 'http://vocalbridgeai.com/api/v1/token';
+const VOCAL_BRIDGE_TOKEN_URL = 'https://vocalbridgeai.com/api/v1/token';
 
 app.get('/health', (_req, res) => {
   res.json({ ok: true, service: 'toddler-play-pal-token-service' });
